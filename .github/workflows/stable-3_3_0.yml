@@ -13,39 +13,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - php-version: 8.0
+          - php-version: 8.1
             validate: 'validate'
-          - php-version: 7.3
-            database: pgsql
-            test: 'test'
-          - php-version: 7.3
-            database: mysql
-            test: 'test'
-          - php-version: 7.4
-            database: pgsql
-            test: 'test'
-          - php-version: 7.4
-            database: mysql
-            test: 'test'
-          - php-version: 8.0
-            database: mysql
-            test: 'test'
-          - php-version: 8.0
-            database: pgsql
-            test: 'test'
           - php-version: 8.1
             database: mysql
             test: 'test'
-          - php-version: 8.1
-            database: pgsql
-            test: 'test'
-          - php-version: 8.2
-            database: mysql
-            test: 'test'
-          - php-version: 8.2
-            database: pgsql
-            test: 'test'
-
 
     name: ojs
     steps:
