@@ -5,7 +5,6 @@
   "scripts": {
     "lint": "eslint ./src --ext .vue,.js,.cjs --fix --ignore-path .gitignore",
     "format": "prettier --write ./src",
-    "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "storybookWithProxy": "cross-env STORYBOOK_APP_DOMAIN_URL=http://localhost:7001  storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -61,7 +60,6 @@
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.17.0",
     "http-proxy-middleware": "^3.0.0",
-    "husky": "^8.0.3",
     "less": "^4.2.0",
     "lint-staged": "^14.0.1",
     "msw": "^2.0.11",
